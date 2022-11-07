@@ -1,0 +1,210 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+  font-family: sans-serif; /* Change your font family */
+}
+
+.table-sortable {
+  width: 1135.150px;
+  height: 400px;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  margin-left: 220px;
+}
+
+.table-sortable thead tr {
+  background-color: #e30f7c;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table-sortable th,
+.table-sortable td {
+  padding: 12px 15px;
+  color: black;
+
+
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.table-sortable tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table-sortable tbody tr {
+  background-color: #f3f3f3;
+}
+
+
+.table-sortable tbody tr.active-row {
+  font-weight: bold;
+  color: #f3f3f3;
+}
+
+.table-sortable td:hover{
+	transform: scale(1.06);
+	background: #ff73d7;
+}
+
+
+.table-sortable td .inf {
+	position: absolute;
+	right: 122px;
+	height:200px; 
+	width: 200px;
+	top: 0;
+	transform: translateY(-50%);
+	line-height: 100px;
+	border-radius: 6px;
+	background: rgb(244, 112, 156);
+	text-align: center;
+	box-shadow: 0 10px 20px rbga(0, 0, 0, 0.2);
+	transition:0s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.table-sortable td:hover .inf{
+	transition: all 0.5 ease;
+	opacity: 1;
+	top:50%;
+}
+
+.table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30, 0.7),rgba(4,9,30, 0.7)),url(/HDV/img/yannick-van-houtven-s4zWbU9RA7g-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.team{
+  margin: 25px 0;
+}
+h1{
+  text-align: center;
+}
+h1:after{
+  content: ' ';
+  background: white;
+  display: block;
+  height: 3px;
+  width: 150px;
+  margin: 10px auto;
+}
+.profile{
+  margin-top: 25px;
+}
+.profile .img-box{
+  opacity: 1;
+  display: block;
+  position: relative;
+}
+.profile h2{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 22px;
+  color: white;
+}
+.profile h3{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: white;
+}
+.profile p{
+  color: white;
+}
+
+
+.table-sortable td .badge{
+
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	border: 1px;
+}
+
+/*font ICT*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  /* font-family: "Oswald" ,sans-serif; */
+}
+
+a{
+  position:relative;
+  font-size:100px;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color:transparent;
+  -webkit-text-stroke:5px aqua;
+}
+a:before {
+  content:"ICT";
+  color:#fff;
+  position:absolute;
+  width: 0;
+  border-right: 5px solid aqua;
+  overflow: hidden;
+  transition: 1s;
+  text-shadow: 0px 0px 10px aqua,0px 0px 20px aqua,0px 0px 30px aqua;
+  animation: ani 5s infinite linear;
+}
+
+@keyframes ani {
+  0%{
+      width: 5px;
+  }
+  50%{
+      width: 100%;
+  }
+  100%{
+      width: 0;
+  }
+  
+}
