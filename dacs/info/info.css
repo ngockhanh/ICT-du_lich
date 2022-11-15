@@ -1,0 +1,43 @@
+body {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/dacs/image/backgroud_infoh.jpg);
+  background-size: cover;
+  background-position-y: -100px;
+  height: 100%;
+  width: 100%;
+
+}
+
+h1 {
+  color: rgb(175, 108, 108);
+}
+
+.info_info {
+  height: 500px;
+  background-color: aliceblue;
+  margin-bottom: 10px;
+}
+
+.info_under {
+  height: 300px;
+  background-color: aliceblue;
+}
+
+.point {
+  height: 600px;
+  background-color: aliceblue;
+  margin-bottom: 10px;
+}
+
+.feed_back {
+  height: 200px;
+  background-color: aliceblue;
+}
+.history {
+  height: 400px;
+  background-color: aliceblue;
+  margin-bottom: 10px;
+}
+.pay {
+  height: 400px;
+  background-color: aliceblue;
+}
