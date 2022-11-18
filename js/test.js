@@ -22,11 +22,4 @@ for (var i = 0; i < arr.length; i++) {
   kt(arr[i].value)
 }
 
-
-console.log(1 / 0)
-try {
-  console.log(k)
-} catch (e) {console.log(e)}
- 
-
-console.log(a.value)
+  
