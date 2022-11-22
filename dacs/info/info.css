@@ -7,6 +7,21 @@ body {
 
 }
 
+.po {
+  position: relative;
+  top: 100px;
+}
+
+.logo {
+  width: 55px;
+  height: auto;
+  border-radius: 50%;
+}
+
+h3 {
+  color: aliceblue;
+}
+
 h1 {
   color: rgb(175, 108, 108);
 }
@@ -31,13 +46,37 @@ h1 {
 .feed_back {
   height: 200px;
   background-color: aliceblue;
+
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
+
 .history {
   height: 400px;
   background-color: aliceblue;
   margin-bottom: 10px;
 }
+
 .pay {
   height: 400px;
   background-color: aliceblue;
+}
+
+.video-container {
+  position: relative;
+  top: 100px;
+
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

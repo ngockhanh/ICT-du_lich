@@ -5,41 +5,189 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/dacs/info/info.css">
+  <link rel="stylesheet" href="/dacs/info/css_lich.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
-  <div>
-    <div class="container-fluid mb-5">
-      <div class="row py-3">
-        <div class="col">
-          <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a href="#" class="navbar-brand"><i class='bx bx-menu bx-tada bx-rotate-180'></i></a>
-            <ul class="navbar-nav">
-              <li class="nav-item"><a href="" class="nav-link">trang chủ</a></li>
-              <li class="nav-item"><a href="" class="nav-link">đăng xuất</a></li>
-              <li class="nav-item"><a href="" class="nav-link"><i class='bx bx-search'></i></a></li>
-            </ul>
-          </nav>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#"><img class="logo" src="https://png.pngtree.com/templates/md/20180508/md_5af1e00b10f2d.jpg" alt=""></a>
+      <h3>ITC(Du Lich cung voi nguoi ban xu)</h3>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><strong>MENU</strong></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">thông tin cá nhân</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                THÊM
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Lịch Trình</a></li>
+                <li><a class="dropdown-item" href="#">Đăng kí thuê</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">////////////</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid text-center">
+  </nav>
+  <div class="container-fluid text-center po">
     <div class="row">
         <div class="col-sm-3 col-xxl-3">
           <div class="info_info"> thong tin hdv</div>
-          <div class="info_under">lich trinh</div>
+          <div class="info_under">lich trinh cua hdv nay
+            <div class="month">
+              <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>August<br><span style="font-size:18px">2021</span></li>
+              </ul>
+            </div>
+            
+            <ul class="weekdays">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+            </ul>
+            
+            <ul class="days">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li><span class="active">10</span></li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+
+
+            </ul>
+          </div>
 
         </div>
-        <div class="col-sm-6 col-xxl-6">
-          <div class="point"> video diem nhan</div>
-          <div class="feed_back"> feed back tu kahch hang</div>
+        <div class="col-sm-6 col-xxl-6 ">
+          <div class="point"> 
+            <iframe src="https://www.youtube.com/embed/zdOmNiXvM3w?rel=0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" width="100%" height="100%" frameborder="0">
+            </iframe>
+          </div>
+          <div class="feed_back"> phan hoi tu khach du lich
+            <div class="alert alert-primary" role="alert">
+              Phản hồi 1
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              Phản hồi 2
+            </div>
+            <div class="alert alert-success" role="alert">
+              Phản hồi 3
+            </div>
+            <div class="alert alert-danger" role="alert">
+              Phản hồi 4
+            </div>
+            <div class="alert alert-warning" role="alert">
+              Phản hồi 5
+            </div>
+            <div class="alert alert-info" role="alert">
+              Phản hồi 6
+            </div>
+            <div class="alert alert-light" role="alert">
+              Phản hồi 7
+            </div>
+            <div class="alert alert-dark" role="alert">
+              Phản hồi 8
+            </div>
+          </div>
         </div>
         <div class="col-sm-3 col-xxl-3">
-          <div class="history"> lich su</div>
+          <div class="history"> 
+            <ol class="list-group list-group-numbered">
+              <li >
+                <span>lich xu di khach cua hdv</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">dia diem: </div>
+                  so nguoi:
+                </div>
+                <span class="badge bg-primary rounded-pill">comment: 14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">dia diem:</div>
+                   so nguoi:
+                </div>
+                <span class="badge bg-primary rounded-pill">comment: 24</span>
+              </li>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">dia diem:</div>
+                 so nguoi:
+              </div>
+              <span class="badge bg-primary rounded-pill">comment: 4</span>
+            </li>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">dia diem:</div>
+               so nguoi:
+            </div>
+            <span class="badge bg-primary rounded-pill">comment: 64</span>
+          </li>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">dia diem:</div>
+             so nguoi:
+          </div>
+          <span class="badge bg-primary rounded-pill">comment: 0</span>
+        </li>
+            </ol>
+          </div>
           <div class="pay"> thanh toan</div>
           <div></div>
         </div>
